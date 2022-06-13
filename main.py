@@ -11,7 +11,7 @@ def main():
     lines=[]
     for text in texts:
       parts=[]
-      result=kw.make_keyword_list(text, score=0)
+      result=kw.make_keyword_list(text, min_score=0)
       parts.append('"'+text+'"')
       parts.append('"'+result+'"')
       line="\t".join(parts)
